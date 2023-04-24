@@ -1,4 +1,4 @@
-# Osäker på vad nedanstående gör - "fick med på köpet":
+# Osäker-på vad nedanstående gör - "fick med på köpet":
 
 git remote add origin https://github.com/kentlundgren/temperatur.git
 git branch -M main
