@@ -1,7 +1,11 @@
+# Osäler på vad nedanstående gör - "fick med på köpet"
 git remote add origin https://github.com/kentlundgren/temperatur.git
 git branch -M main
 git push -u origin main
 
+# Jag har fått mycket hjälp av ChatGPT för att koda https://chat.openai.com/
+# Pythonkod, skrivit av ChatGPT, hämtat via Poe: https://poe.com/s/bq1VIwvEG2WNU0QVqTl3
+# Jag har använt meig att PuCharm för att koda Python: https://www.jetbrains.com/pycharm/
 import requests
 import json
 
