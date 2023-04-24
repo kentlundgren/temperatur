@@ -1,6 +1,5 @@
 # Osäker på vad nedanstående gör - "fick med på köpet":
-#
-# Test av uppdatering igen från PyCharm till GitHub
+# Test av uppdatering igen och igen från PyCharm till GitHub
 
 
 git remote add origin https://github.com/kentlundgren/temperatur.git
