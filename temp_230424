@@ -1,11 +1,13 @@
-# Osäler på vad nedanstående gör - "fick med på köpet"
+# Osäker på vad nedanstående gör - "fick med på köpet":
+
 git remote add origin https://github.com/kentlundgren/temperatur.git
 git branch -M main
 git push -u origin main
 
 # Jag har fått mycket hjälp av ChatGPT för att koda https://chat.openai.com/
 # Pythonkod, skrivit av ChatGPT, hämtat via Poe: https://poe.com/s/bq1VIwvEG2WNU0QVqTl3
-# Jag har använt meig att PuCharm för att köra Pythonkoden: https://www.jetbrains.com/pycharm/
+# Jag har använt mig av PyCharm för att köra Pythonkoden: https://www.jetbrains.com/pycharm/
+
 import requests
 import json
 
@@ -33,3 +35,5 @@ for city, station in cities.items():
         print(f'{city}: {temperature} °C')
     else:
         print(f'Kunde inte hämta data för {city}')
+
+# Just nu, 24-04-24, skrivs bara temperaturen för Stockholm ut
