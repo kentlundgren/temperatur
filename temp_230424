@@ -1,0 +1,31 @@
+git remote add origin https://github.com/kentlundgren/temperatur.git
+git branch -M main
+git push -u origin main
+
+import requests
+import json
+
+# Lista med de fem största städerna i Sverige och deras stationer
+cities = {
+    'Stockholm': '97510',
+    'Göteborg': '98210',
+    'Malmö': '96430',
+    'Uppsala': '97420',
+    'Västerås': '97210'
+}
+
+# Loopa över städerna och deras stationer
+for city, station in cities.items():
+    # URL för SMHI API för observationer för stationen
+    url = f'https://opendata-download-metobs.smhi.se/api/version/latest/parameter/1/station/{station}/period/latest-hour/data.json'
+
+    # Gör HTTP-förfrågan
+    response = requests.get(url)
+
+    # Kontrollera att förfrågan var framgångsrik (statuskod 200 betyder "OK")
+    if response.status_code == 200:
+        data = response.json()  # Konvertera JSON till Python-dict
+        temperature = data['value'][0]['value']  # Hämta senaste temperaturvärdet
+        print(f'{city}: {temperature} °C')
+    else:
+        print(f'Kunde inte hämta data för {city}')
