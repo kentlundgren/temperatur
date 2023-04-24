@@ -1,5 +1,5 @@
 # temperatur
-Hämta väderadata som temperatur från offentliga databaser.
+Hämtar väderadata som temperatur från offentliga databaser.
 Tanken är att hämta senaste temp från Sveriges fem största städer.
 
 Jag har fått mycket hjälp av ChatGPT för att koda https://chat.openai.com/
